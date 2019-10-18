@@ -1,0 +1,239 @@
+﻿/*Nya styles*/
+.bb_aj_gridItem input {
+    padding: 4px 6px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bb_aj_gridItem button {
+    font-family: 'Baloo', cursive;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 2px;
+    padding: 4px 10px;
+    background-color: #fff;
+    outline: none;
+}
+
+.gridTitle .bb_aj_gridItem {
+    background-color: transparent !important;
+}
+
+.ikonheaderBlock h1 {
+    color: #fff;
+    font-size: 2.2em;
+}
+
+.aj_bb_KrypinMainContainer {
+    padding: 1.2% !important;
+}
+
+.aj_bb_KrypinMainContainer #footikonimg {
+    width: 200px;
+}
+
+.aj_bb_KrypinSkin .addboklistform {
+    text-align: left;
+    padding: .5rem;
+}
+  /* line 5, _dev/devsass/komponenter/_extendedDesignSettings.scss */
+  .aj_bb_KrypinSkin .addboklistform button {
+    margin: .2rem .2rem 0 0;
+  }
+
+/*Tema med grönt*/
+/* line 31, _dev/devsass/komponenter/_colortemplate.scss */
+.aj_bb_skin_greenbg {
+    /*background-image: url("/Portals/_default/skins/bb_DAGOBAH_krypin/images/bakgrunder/greenNyckelpigor.jpg") !important;*/
+    background-image: url("/Portals/_default/skins/bb_DAGOBAH_krypin/images/bakgrunder/greenleaves.jpg") !important;
+    color: #fff;
+}
+  /* line 38, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_greenbg .bb_aj_gridItem {
+        background-color: #eaf2d3;
+    }
+  /* line 43, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_greenbg .item:hover {
+    background-color: #c1df89;
+  }
+  /* line 47, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_greenbg .bb_aj_valdBG {
+    background-color: #c1df89;
+  }
+  /* line 51, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_greenbg .bookitem-card:hover, .aj_bb_skin_greenbg .bibblomon-card:hover, .aj_bb_skin_greenbg .booklist-card:hover, .aj_bb_skin_greenbg .badgeitem-card:hover, .aj_bb_skin_greenbg .skrivbokenitem-card:hover, .aj_bb_skin_greenbg .boktipsitem-card:hover, .aj_bb_skin_greenbg #bb_aj_inventory_Mod .inventoryitem-card:hover, #bb_aj_inventory_Mod .aj_bb_skin_greenbg .inventoryitem-card:hover, .aj_bb_skin_greenbg #bb_aj_shop_Mod .shopitem-card:hover, #bb_aj_shop_Mod .aj_bb_skin_greenbg .shopitem-card:hover {
+    background-color: #c1df89;
+  }
+
+/*Tema med brunt*/
+/* line 60, _dev/devsass/komponenter/_colortemplate.scss */
+.aj_bb_skin_brownbg {
+  background-image: url("/Portals/_default/skins/bb_DAGOBAH_krypin/images/bakgrunder/brownbg-animals.jpg") !important; }
+  /* line 65, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_brownbg .bb_aj_gridItem {
+        background-color: #e4cc73;
+    }
+  /* line 71, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_brownbg #aj_bb_krypinNav li:hover {
+    /*background-color: #62533B;*/
+  }
+  /* line 77, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_brownbg .bookitem-card:hover, .aj_bb_skin_brownbg .bibblomon-card:hover, .aj_bb_skin_brownbg .booklist-card:hover, .aj_bb_skin_brownbg .badgeitem-card:hover, .aj_bb_skin_brownbg .skrivbokenitem-card:hover, .aj_bb_skin_brownbg .boktipsitem-card:hover, .aj_bb_skin_brownbg #bb_aj_inventory_Mod .inventoryitem-card:hover, #bb_aj_inventory_Mod .aj_bb_skin_brownbg .inventoryitem-card:hover, .aj_bb_skin_brownbg #bb_aj_shop_Mod .shopitem-card:hover, #bb_aj_shop_Mod .aj_bb_skin_brownbg .shopitem-card:hover {
+        background-color: #e4b629;
+
+    }
+
+/*Tema med Blå*/
+/* line 86, _dev/devsass/komponenter/_colortemplate.scss */
+.aj_bb_skin_bluebg {
+  background-image: url("/Portals/_default/skins/bb_DAGOBAH_krypin/images/bakgrunder/fastfood.jpg") !important; }
+  /* line 91, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_bluebg .bb_aj_gridItem {
+        background-color: #a6def2;
+    }
+  /* line 96, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_bluebg #aj_bb_krypinNav li:hover {
+        /*background-color: #C3ECF3;*/
+    }
+  /* line 102, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_bluebg .bookitem-card:hover, .aj_bb_skin_bluebg .bibblomon-card:hover, .aj_bb_skin_bluebg .booklist-card:hover, .aj_bb_skin_bluebg .badgeitem-card:hover, .aj_bb_skin_bluebg .skrivbokenitem-card:hover, .aj_bb_skin_bluebg .boktipsitem-card:hover, .aj_bb_skin_bluebg #bb_aj_inventory_Mod .inventoryitem-card:hover, #bb_aj_inventory_Mod .aj_bb_skin_bluebg .inventoryitem-card:hover, .aj_bb_skin_bluebg #bb_aj_shop_Mod .shopitem-card:hover, #bb_aj_shop_Mod .aj_bb_skin_bluebg .shopitem-card:hover {
+        background-color: #20acde;
+    }
+
+/*Tema med svart*/
+/* line 111, _dev/devsass/komponenter/_colortemplate.scss */
+.aj_bb_skin_blackbg {
+  background-image: url("/Portals/_default/skins/bb_DAGOBAH_krypin/images/bakgrunder/pirates2.jpg") !important;
+}
+  /* line 113, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_blackbg h1, .aj_bb_skin_blackbg h2, .aj_bb_skin_blackbg h3, .aj_bb_skin_blackbg h4, .aj_bb_skin_blackbg h5, .aj_bb_skin_blackbg p {
+    color: #fff !important; }
+  /* line 117, _dev/devsass/komponenter/_colortemplate.scss */
+
+  /* line 120, _dev/devsass/komponenter/_colortemplate.scss */
+    .aj_bb_skin_blackbg .bb_aj_gridItem {
+        background-color: #323232;
+    }
+  /* line 125, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_blackbg #aj_bb_krypinNav li:hover {
+    /*background-color: #CCCCCC;*/ }
+  /* line 131, _dev/devsass/komponenter/_colortemplate.scss */
+  .aj_bb_skin_blackbg .bookitem-card:hover, .aj_bb_skin_blackbg .bibblomon-card:hover, .aj_bb_skin_blackbg .booklist-card:hover, .aj_bb_skin_blackbg .badgeitem-card:hover, .aj_bb_skin_blackbg .skrivbokenitem-card:hover, .aj_bb_skin_blackbg .boktipsitem-card:hover, .aj_bb_skin_blackbg #bb_aj_inventory_Mod .inventoryitem-card:hover, #bb_aj_inventory_Mod .aj_bb_skin_blackbg .inventoryitem-card:hover, .aj_bb_skin_blackbg #bb_aj_shop_Mod .shopitem-card:hover, #bb_aj_shop_Mod .aj_bb_skin_blackbg .shopitem-card:hover {
+    background-color: #CCCCCC; }
+
+/* line 3, _dev/devsass/komponenter/_base.scss */
+.aj_bb_KrypinMainContainer .row3 {
+  margin-left: .18rem;
+  margin-right: .3rem;
+  width: auto; }
+
+/* line 8, _dev/devsass/komponenter/_base.scss */
+.aj_bb_KrypinMainContainer .aj_bb_krypinNavBlock {
+  background-color: transparent !important;
+  width: 100%;
+}
+
+/* line 22, _dev/devsass/komponenter/_grid.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin: 1.5em 0 0.5em; }
+
+/* line 29, _dev/devsass/komponenter/_grid.scss */
+h1 {
+    font-size: 2em;
+    font-family: 'Baloo', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* line 30, _dev/devsass/komponenter/_grid.scss */
+.bb_aj_gridItem h2 {
+    font-size: 1em;
+    font-family: 'Baloo', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* line 31, _dev/devsass/komponenter/_grid.scss */
+h3 {
+  font-size: 1.5em; }
+
+/* line 32, _dev/devsass/komponenter/_grid.scss */
+h4 {
+  font-size: 1.3em; }
+
+/* line 33, _dev/devsass/komponenter/_grid.scss */
+h5 {
+  font-size: 1.1em !important;
+  font-weight: 600; }
+
+/* line 36, _dev/devsass/komponenter/_grid.scss */
+h6 {
+  font-size: 1.05em !important;
+  font-weight: 500; }
+
+/* line 68, _dev/devsass/komponenter/_grid.scss */
+.bb_aj_gridItem {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* With gutters*/
+/* line 98, _dev/devsass/komponenter/_grid.scss */
+.Grid--gutters {
+  margin-left: -1em;
+  margin-bottom: 1em;
+}
+
+  /* line 6, _dev/devsass/komponenter/_krypinpageBase.scss */
+  .ikonheaderBlock img {
+    max-width: 60px;
+    margin-right: .5rem; }
+
+    /* line 14, _dev/devsass/komponenter/_krypinpageBase.scss */
+    .ikonheaderBlock .booklistSetup img {
+      margin-right: .1rem; }
+
+/* item baseblock för alla listitems*/
+/* line 3, _dev/devsass/komponenter/_bookItemBlock.scss */
+.bookitem-card, .bibblomon-card, .booklist-card, .badgeitem-card, .skrivbokenitem-card, .boktipsitem-card, #bb_aj_inventory_Mod .inventoryitem-card, #bb_aj_shop_Mod .shopitem-card {
+    padding: 1em 0.6em;
+    border-radius: 10px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    __min-width: 160px;
+    /*max-height: 300px;*/
+}
+
+    /* line 26, _dev/devsass/komponenter/_shop.scss */
+    #bb_aj_shop_Mod .bookitem-info .shop_prisblock {
+      margin-top: .1rem;
+      margin-right: -.2rem;
+      margin-left: -.2rem;
+      padding: 0.3em 0 0.4em 0.6em;
+      background: #339933;
+      border-radius: 10px;
+    }
+.shop_prisblock h5 {
+    font-size: 1em !important;
+}
+
+/* line 37, _dev/devsass/kk_aj_PublicCSS.scss */
+.item {
+  height: auto !important;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-left: 0.02rem !important;
+  margin-right: .02rem !important;
+  min-height: 330px !important; }
+
+  /* line 50, _dev/devsass/kk_aj_PublicCSS.scss */
+  .item h5, .bookitem-info h5 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 1.1rem;
+    font-family: 'Baloo', cursive;
+    font-weight: 400;
+  }

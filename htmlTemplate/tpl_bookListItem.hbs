@@ -1,0 +1,28 @@
+<!-- Loop start -->
+{{#each Bookitems}}
+
+<div class="col d-flex align-items-top p-4 batuu-background-row-item col-md-3 aj_jplist_item" >
+    {{#each MediatypCategories}}
+        <div class="align-self-start aj_bb_extrasymb MediatypCategories_{{CategoryID}}"> <img src="/Portals/0/ny_layout/symboler/{{iconSrc}}" alt="{{catnamn}}" title="{{catnamn}}" class="img-thumbnail"></div>
+    {{else}}
+        <div class="align-self-start aj_bb_extrasymb MediatypCategories_0"></div>
+    {{/each}}
+
+    <a href="/katalog_4_2/tabid/1469/Default.aspx?bookid={{Bookid}}">
+        <div class="text-center aj_bb_year{{Published}} aj_bb_easy_{{Easyread}}">
+            <span class="{{#each Categories}}aj_bb_cat_{{CategoryID}} {{/each}}"></span>
+            <img src="{{BokomslagURL}}" alt="{{title}}" class="img-thumbnail">
+            <p class="font-weight-bold my-1 book-title">{{title}}</p>
+            <p class="font-weight-light my-0 author">{{#each Forfattare}} {{namn}} {{/each}}</p>
+        </div>
+    </a>    
+     
+    {{#booklistdpr @root.Userbooklist Bookid}} {{/booklistdpr}}
+    
+</div>
+{{else}}
+    <div class="col alert-warning" >
+        <h2 >Kunde tyv&auml;rr inte hitta det du s&ouml;kte! :(</h2>  
+        <h3>Pr&ouml;va igen!</h3>   
+    </div>
+{{/each}}

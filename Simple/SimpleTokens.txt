@@ -1,0 +1,26 @@
+<ul class="navbar-nav mx-auto d-flex flex-wrap"> 
+	[*>NODE-TOP]
+</ul>
+
+[>NODE-TOP]
+	<li class="nav-item dropdown [?FIRST] first[/?][?LAST] last[/?][?SELECTED] selected[/?]">
+		[?ENABLED]
+			
+			<a class="nav-link dropdown-toggle" href="[=URL]" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false" [?TARGET]target="[=TARGET]"[/?]>[=TEXT]</a>
+		[?ELSE]
+			[=TEXT]
+		[/?]
+		[?NODE]
+			<div class="dropdown-menu " aria-labelledby="navbarDropdown">
+				
+				[*>NODE-SUB]
+				
+			</div>
+		[/?]
+	</li>
+[/>]
+
+
+[>NODE-SUB]	
+	<a class="dropdown-item" href="[=URL]" [?TARGET]target="[=TARGET]"[/?]>[=TEXT]</a>		
+[/>]

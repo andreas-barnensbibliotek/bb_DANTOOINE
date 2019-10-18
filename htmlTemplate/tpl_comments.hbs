@@ -1,0 +1,14 @@
+<h4 class="mt-2">Vad tyckte andra som har l&auml;st boken?</h4>
+{{#hb_showComments CommentList.length}}
+    {{#each @root.CommentList}}
+        <div class="my-4">
+            <p class="mb-0 batuu-quote2">"{{{CommentInlagg}}}"</p>
+            <p class="ml-2"><strong><i class="fas fa-user"></i> {{CommentNamn}}</strong> {{CommentAlder}} &aring;r</p>
+        </div>
+    {{/each}}
+{{else}}
+<div class="my-4">
+            <p class="mb-0 batuu-quote2">"Bli f&ouml;rst med att skriva vad du tycker!"</p>            
+        </div>
+{{/hb_showComments}}
+            
