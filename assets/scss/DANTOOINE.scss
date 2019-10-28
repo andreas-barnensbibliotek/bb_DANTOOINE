@@ -265,7 +265,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .batuu-background-row-item:hover{
-    background-color: rgba( $white, .4 );
+   background-color: rgba( $white, .4 );
 }
 .batuu-background-row-green{
     background-color: #95C024;
@@ -340,6 +340,11 @@ li.dropdown:hover > .dropdown-menu {
     width: 100px;
     margin-top: $btn-block-spacing-y;
   }
+
+ .dantooine-btn-category {
+    width: 100%;
+    margin-top: $btn-block-spacing-y;
+  } 
   
 // Circle button
 .btn-circle {
@@ -717,9 +722,37 @@ li.dropdown:hover > .dropdown-menu {
         padding-right:1.5rem!important;
     }
   }
-.aj_jplist_item{
+.aj_jplist_item {
     img{
         min-width: 90px;
     }
     min-width: 120px;
+}
+
+.dantooine-table-book-tips{
+    width: 80%;
+}
+
+.batuu-background-row-booktip{
+    background-color: transparent;
+}
+
+.batuu-background-row-booktip-item:hover{
+   background-color: rgba( $batuu-teak, .2 );
+}
+
+.dantnooine-modal-header{
+ background-color: $batuu-teak;
+ color: $white;
+    .close{
+        color: $white;
+    }
+}
+
+
+.img-print{
+    width: 300px;
+}
+.img-print-logo{
+    width: 400px;
 }
