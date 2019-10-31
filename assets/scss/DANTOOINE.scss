@@ -756,3 +756,11 @@ li.dropdown:hover > .dropdown-menu {
 .img-print-logo{
     width: 400px;
 }
+
+.batuu-book-width{
+    width: 224px;
+
+    @media (max-width: 576px) {
+        width: 180px;
+    }
+}
