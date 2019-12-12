@@ -1,0 +1,48 @@
+<div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header dantnooine-modal-header">
+                <h5 class="modal-title" id="aj_boktips_v3_Modaltitle">Boktips</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="batuu-book-img">
+                            <img src="{{ImgSrc}}" alt="{{Title}}" class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <h5>{{Title}}</h5>
+                        <table class="dantooine-table-book-tips">
+                            <tr>
+                                <td><strong>F&ouml;rfattare:</strong></td>
+                                <td><a class="batuu-link" href="#">{{Author}} </a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>&Aring;lder:</strong></td>
+                                <td><a class="batuu-link" href="#">{{LowAge}} - {{HighAge}}</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Boktipsare:</strong></td>
+                                <td><a class="batuu-link" href="#">{{UserName}}</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-12 my-4">
+                        <p>
+                            <em>
+                                {{{Review}}}
+                            </em>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-batuu-blue">Skriv ut boktipset</button>
+                <a href="/tabid/1469/Default.aspx?bookid={{Bookid}}" type="button" class="btn btn-batuu-pink" data-bookid="{{Bookid}}">L&auml;s mer om boken</a>
+            </div>
+        </div>
+    </div>

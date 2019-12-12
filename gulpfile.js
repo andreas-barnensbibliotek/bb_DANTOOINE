@@ -15,7 +15,7 @@ let srcPath = {
 
 gulp.task('default', ['webpack', 'styles', 'jsconcatfiles'], () => {
     gulp.watch('./assets/scss/**/*', ['styles']);
-    gulp.watch('./assets/js/**/*', ['webpack']);       
+    gulp.watch('./assets/js/**/**/*', ['webpack']);       
 	gulp
 		.watch([
 			'./public/**/*',
@@ -31,16 +31,16 @@ gulp.task('jsconcatfiles', function () {
         [  	
 			srcPath.jsbundle + '/autocomplete/auto-complete.js',					
 			srcPath.jsbundle + '/localstorage/localstorage.js',
-			// srcPath.jsbundle + '/jplist/jplist.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.core.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.pagination-bundle.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.bootstrap-pagination-bundle.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.bootstrap-filter-dropdown.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.sort-bundle.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.filter-dropdown-bundle.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.jquery-ui-bundle.min.js',
-			srcPath.jsbundle + '/jplist_pagination/jplist.history-bundle.min.js',	
-			srcPath.jsbundle + '/rater/rater.min.js',		
+			// // srcPath.jsbundle + '/jplist/jplist.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.core.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.pagination-bundle.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.bootstrap-pagination-bundle.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.bootstrap-filter-dropdown.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.sort-bundle.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.filter-dropdown-bundle.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.jquery-ui-bundle.min.js',
+			// srcPath.jsbundle + '/jplist_pagination/jplist.history-bundle.min.js',	
+			// srcPath.jsbundle + '/rater/rater.min.js',		
             srcPath.jsbundle + '/main.js',
             srcPath.jsbundle + '/vendors~main.main.js',
         ]

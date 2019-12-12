@@ -1,0 +1,24 @@
+<!-- Loop start -->
+{{#each Boktips}}
+
+<div class="p-2 batuu-book-width d-flex align-items-end batuu-background-row-booktip-item">    
+
+    <a href="#aj_boktips_v3_Modal" class="aj_boktips_v3_item" data-toggle="modal" data-target="#aj_boktips_v3_Modal" data-tipid="{{TipID}}">
+        <div class="text-center">
+            <div class="batuu-book-img">
+                <img src="{{ImgSrc}}" alt="{{Title}}" class="img-thumbnail">
+            </div>
+            <div class="batuu-book-title">
+                <p class="font-weight-bold my-1">{{Title}}</p>
+                <p class="font-weight-light my-0">{{Author}}</p>
+            </div>
+        </div>               
+    </a>   
+
+</div>
+{{else}}
+    <div class="col alert-warning" >
+        <h2 >Kunde tyv&auml;rr inte hitta det du s&ouml;kte! :(</h2>  
+        <h3>Pr&ouml;va igen!</h3>   
+    </div>
+{{/each}}

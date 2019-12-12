@@ -1,7 +1,9 @@
-﻿import storageHandlerObj from '../storagehandler/storagehandler';
+import storageHandlerObj from '../storagehandler/storagehandler';
+import appsettings from '../appsettings';
 
 const apiServiceHandler = () => {
 	let storeObj = storageHandlerObj();
+	let _appsettings = appsettings.config;
 
 	function GetJsonData(url, callback) {
 		if (!url) {
@@ -11,6 +13,7 @@ const apiServiceHandler = () => {
 				.then(resp => resp.json()) // Transform the data into json
 				.then(function(data) {
 					//storeObj.addDataToStorage(data);
+					_appsettings.currentJson = data;
 					callback(data);
 				})
 				.catch(function() {

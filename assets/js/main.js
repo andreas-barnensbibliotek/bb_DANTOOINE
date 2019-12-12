@@ -1,5 +1,4 @@
-import hello from './components/test';
-import handlebarHandler from './handlebar/handlebarUsageExemple';
+import btHandler from './boktips/boktipsHandler';
 
 // var dt = require('./components/old');
 // let ny = hello();
@@ -9,7 +8,15 @@ import handlebarHandler from './handlebar/handlebarUsageExemple';
 // dt.testarold('funkar detta');
 
 $(function() {
-	// let _HBObj = handlebarHandler();
+	let _btObj = btHandler();
+
+	const init = function() {
+		_btObj.init(function(text) {
+			console.log('startar btobj' + text);
+		});
+	};
+	init();
+
 	// alert(' och igen..nu utan ' + ny.skrik(dt.testarold('funkar detta')));
 	// console.log('innan jplist2');
 	//jplist.init();
