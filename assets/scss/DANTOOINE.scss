@@ -34,12 +34,12 @@ a {
     color: $body-color;
 
     &:hover{
-        color: $batuu-teak;
+        color: $dantooine-teak;
     }
 }
 
-.batuu-link{
-  	color: $batuu-teak;
+.dantooine-link{
+  	color: $dantooine-teak;
 
     &:hover,
     &:active {
@@ -49,11 +49,11 @@ a {
 
 }
 
-.batuu-container {
+.dantooine-container {
     background-color: $white;
 }
 
-.batuu-logo {
+.dantooine-logo {
     position: relative;
     left: 0px;
     top: 0px;
@@ -66,30 +66,30 @@ a {
     }
 }
 
-.batuu-logo-container{
+.dantooine-logo-container{
     max-height: 120px;
 }
 
-.batuu-header-links{
+.dantooine-header-links{
     font-weight: bold;
     font-size: 14px;
 }
 
-.batuu-user::before{
+.dantooine-user::before{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     content: "\f007";
     margin-right: 5px;
 
 }
-.batuu-login::before{
+.dantooine-login::before{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     content: "\f023";
     margin-right: 5px;
 
 }
-.batuu-logout::before{
+.dantooine-logout::before{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     content: "\f3c1";
@@ -106,7 +106,7 @@ a {
 .aj_searchbox a{
     color:white !important;
   }
-.batuu-header-content{
+.dantooine-header-content{
     height: 150px;
     overflow: hidden;
    
@@ -117,7 +117,7 @@ a {
 
 }
 
-.batuu-nav{
+.dantooine-nav{
     padding-left: -15px;
     padding-right: -15px;
 }
@@ -130,7 +130,7 @@ a {
             color: $white;
 
             &:hover{
-                background-color: $batuu-orange;
+                background-color: $dantooine-orange;
                 color: $body-color;
                 text-decoration: underline;
             }
@@ -158,7 +158,7 @@ a {
         color:$black;
 
         &:hover{
-            background-color: lighten($batuu-vanilla, 20) ;
+            background-color: lighten($dantooine-vanilla, 20) ;
             color: $body-color;
         }
     }
@@ -189,7 +189,7 @@ li.dropdown:hover > .dropdown-menu {
         background-color: $gray-800;
 
         &:hover{
-            background-color: $batuu-orange;
+            background-color: $dantooine-orange;
             color: $body-color;
         }
     }
@@ -260,24 +260,24 @@ li.dropdown:hover > .dropdown-menu {
 
 
 
-.batuu-background-row{
-    background-color: $batuu-background-row-color;
+.dantooine-background-row{
+    background-color: $dantooine-background-row-color;
 }
 
-.batuu-background-row-item:hover{
+.dantooine-background-row-item:hover{
    background-color: rgba( $white, .4 );
 }
-.batuu-background-row-green{
+.dantooine-background-row-green{
     background-color: #95C024;
 }
 
-.batuu-footer{
+.dantooine-footer{
     margin-top:1rem;
     max-height:180px !important;
     max-height: 380px;
     padding: 2rem 1rem;
-    background-color: $batuu-brown;
-    border: 5px solid $batuu-lightbrown;
+    background-color: $dantooine-brown;
+    border: 5px solid $dantooine-lightbrown;
 }
 
 #footikonimg{
@@ -288,19 +288,19 @@ li.dropdown:hover > .dropdown-menu {
 
 
 @include media-breakpoint-between(md, xl) {   
-    .batuu-category-div{   
+    .dantooine-category-div{   
         padding-right: 70px;
         padding-top: .5rem; 
     }   
 }
 
 @include media-breakpoint-down(sm) { 
-    .batuu-category-div{   
+    .dantooine-category-div{   
         padding-top: 30px; 
     }
 }
 
-.batuu-category-icon{
+.dantooine-category-icon{
     margin-bottom: 5px;
     margin-right: 5px;
     height: 25px;
@@ -311,22 +311,22 @@ li.dropdown:hover > .dropdown-menu {
     display: inline-block;
 }
 
-.batuu-book-img{
+.dantooine-book-img{
     overflow: hidden;
     max-width: 190px;
 }
 
-.batuu-book-title{
+.dantooine-book-title{
     height: 70px;
     bottom: 0;
 }
 
-.batuu-rating-item{
+.dantooine-rating-item{
     height: 20px;
 
 }
 
-.batuu-quote{
+.dantooine-quote{
     &::before{
          content: "\”";
     }
@@ -391,19 +391,19 @@ li.dropdown:hover > .dropdown-menu {
     color: $gray-600;
 
     &:hover{
-        color: $batuu-green;
+        color: $dantooine-green;
     }
 }
 
 .page-item.active .page-link {
-    color: $batuu-gray-900;
-    background-color: $batuu-green;
-    border-color: $batuu-green;
+    color: $dantooine-gray-900;
+    background-color: $dantooine-green;
+    border-color: $dantooine-green;
 
 }
 
 
-.batuu-rating-footer{
+.dantooine-rating-footer{
     background-color: $gray-400;
     padding: 5px;
 }
@@ -738,11 +738,11 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .dantooine-background-row-booktip-item:hover{
-   background-color: rgba( $batuu-teak, .2 );
+   background-color: rgba( $dantooine-teak, .2 );
 }
 
 .dantnooine-modal-header{
- background-color: $batuu-teak;
+ background-color: $dantooine-teak;
  color: $white;
     .close{
         color: $white;
@@ -780,7 +780,7 @@ li.dropdown:hover > .dropdown-menu {
       width: 100%;
       display: block;
       text-align: left;
-      color: $batuu-gray-900;
+      color: $dantooine-gray-900;
       cursor: pointer;
       position: relative;
       z-index: 2;
@@ -792,7 +792,7 @@ li.dropdown:hover > .dropdown-menu {
                 height: 10px;
                 border-radius: 50%;
                 content: '';
-                background-color: $batuu-purple;
+                background-color: $dantooine-purple;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -845,8 +845,8 @@ li.dropdown:hover > .dropdown-menu {
         }
 
         &:after {
-        background-color: $batuu-blue;
-        border-color: $batuu-blue;
+        background-color: $dantooine-blue;
+        border-color: $dantooine-blue;
         background-image: url("http://localhost/bb_DANTOOINE/images/quiz-w_nr-x.svg");
         }
 
@@ -890,13 +890,13 @@ li.dropdown:hover > .dropdown-menu {
     text-align:center;
 }
 .quiz-table-right{
-    background-color: $batuu-green;
+    background-color: $dantooine-green;
     color: $white;
 }
 
 .table-quiz thead th {
     font-weight: bold;
-    background-color: $batuu-orange;
+    background-color: $dantooine-orange;
     text-align: center;
     color: $white;
     border: none;
@@ -920,7 +920,7 @@ li.dropdown:hover > .dropdown-menu {
 
 .table-highscore thead th {
     font-weight: bold;
-    background-color: $batuu-purple;
+    background-color: $dantooine-purple;
     color: $white;
     border: none;
 }
