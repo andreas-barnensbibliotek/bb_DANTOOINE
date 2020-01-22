@@ -1,0 +1,48 @@
+
+
+/* Colors Sommarboken */
+
+$sommarboken-gray-900: #212529;
+$grey:                 #6c757d;
+
+$sommarboken-blue:      #20ACDE ; // Blue #20ACDE
+$sommarboken-purple:    #7067AB ; // Purple #7067AB
+$sommarboken-light-pink:#F0C2C5 ; // Light Pink #F0C2C5
+$sommarboken-pink:      #C22970 ; // Pink #C22970
+$sommarboken-orange:    #F29100 ; // Orange #F29100
+$sommarboken-yellow:    #FFEF42 ; // Yellow #FFEF42
+$sommarboken-green:     #95C024 ; // Green #95C024
+$sommarboken-teak:      #AA9256 ; // Brown #AA9256
+$sommarboken-vanilla:   #CCBE9B ;  //Vanilla #CCBE9B
+$sommarboken-grey:      #6c757d ;
+$sommarboken-lightbrown:#976b41 ;
+$sommarboken-brown:     #664924 ;
+
+$link-visited: darken($sommarboken-orange, 20% );
+
+
+$body-background-color:         #8cc4df ; //Background color
+$sommarboken-background-row-color: lighten( $sommarboken-vanilla, 10% );
+
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "sommarboken-blue":        $sommarboken-blue,
+  "sommarboken-purple":      $sommarboken-purple,
+  "sommarboken-light-pink":  $sommarboken-light-pink,
+  "sommarboken-pink":        $sommarboken-pink,
+  "sommarboken-orange":      $sommarboken-orange,
+  "sommarboken-yellow":      $sommarboken-yellow,
+  "sommarboken-green":       $sommarboken-green,
+  "sommarboken-teak":        $sommarboken-teak,
+  "sommarboken-vanilla":     $sommarboken-vanilla,
+  "sommarboken-lightbrown":  $sommarboken-lightbrown,
+  "sommarboken-brown":       $sommarboken-brown,
+  "sommarboken-grey":        $sommarboken-grey
+), $theme-colors);
+
+
+/*
+$yiq-text-dark: $sommarboken-gray-900;
+$yiq-text-light: $sommarboken-gray-900;
+*/
