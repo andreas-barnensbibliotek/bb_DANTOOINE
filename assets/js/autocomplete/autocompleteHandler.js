@@ -5,7 +5,7 @@ import appconfigObj from '../appsettings';
 
 const autoCompleteHandler = () => {
 	let service = serviceobj();
-	let appconf = appconfigObj();
+	let appconf = appconfigObj.config;
 
 	let urlParams = {
 		shtyp: '0'
@@ -13,7 +13,7 @@ const autoCompleteHandler = () => {
 
 	function init() {
 		let auto = new autoComplete({
-			selector: '#aj_boktips_v3_freetxtsrh',
+			selector: '#inptxt_search',
 			minChars: 3,
 			source: function(term, suggest) {
 				term = fixautostr(term);
@@ -21,7 +21,7 @@ const autoCompleteHandler = () => {
 					let url = appconf.api.autocomplete.getbyAuto(term);
 
 					let getdata = service.GetjsonAuto(url, function(sevicedata) {
-						let choices = sevicedata;
+						let choices = sevicedata.Boktips;
 						let suggestions = [];
 						let i;
 						for (i = 0; i < choices.length; i++)
@@ -55,17 +55,15 @@ const autoCompleteHandler = () => {
 			},
 			onSelect: function(e, term, item) {
 				// let $spinner = $('.bb_aj_spinner');
-				let searchstr = item.getAttribute('data-langname');				
+				let searchstr = item.getAttribute('data-langname');
 				// $spinner.show();
 
 				urlParams.shtyp = 'freeserch';
-				
-				$('#aj_boktips_v3_freetxtsrh').val(searchstr);
+
+				$('#inptxt_search').val(searchstr);
 				$('#aj_bb_searchbtn')
 					.click()
 					.focus();
-
-				
 			}
 		});
 	}

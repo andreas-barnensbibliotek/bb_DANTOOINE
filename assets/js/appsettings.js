@@ -2,12 +2,12 @@ module.exports = {
 	config: (function() {
 		let _apiserver = 'http://localhost:59015';
 		let _dnnURL = 'http://localdev.kivdev.se';
-		//let _apiserver = "http://dev1.barnensbibliotek.se:8080";
+		// let _apiserver = "http://dev1.barnensbibliotek.se:8080";
 		//let _dnnURL = "http://dev1.barnensbibliotek.se";
 		//let _apiserver = "http://dev1.barnensbibliotek.se:8080";
 		//let _dnnURL = "http://nytt.barnensbibliotek.se";
-		//let _apiserver = "https://www2.barnensbibliotek.se";
-		//let _dnnURL = "https://www.barnensbibliotek.se";
+		// let _apiserver = 'https://www2.barnensbibliotek.se';
+		// let _dnnURL = 'https://www.barnensbibliotek.se';
 		let _devkey = 'alf';
 		let _apidevkeyend = '/devkey/' + _devkey + '/?type=json';
 		let _localOrServerURL = '';
@@ -29,36 +29,25 @@ module.exports = {
 		let _fn_RndBoktips = function(antal) {
 			return (
 				_apiserver +
-				'/Api_v3.1/boktips/typ/Latest/val/' +
+				'/Api_v3.1/boktips/typ/ByRandom/val/' +
 				antal +
 				'/txtval/0' +
 				_apidevkeyend
 			);
 		};
-		let _fn_RankedBoktips = function(antal) {
+
+		let _fn_AgeBoktips = function(ageval) {
 			return (
 				_apiserver +
-				'/Api_v3.1/boktips/typ/Latest/val/' +
-				antal +
-				'/txtval/0' +
-				_apidevkeyend
-			);
-		};
-		let _fn_AgeBoktips = function(antal) {
-			return (
-				_apiserver +
-				'/Api_v3.1/boktips/typ/Latest/val/' +
-				antal +
+				'/Api_v3.1/boktips/typ/ByAge/val/' +
+				ageval +
 				'/txtval/0' +
 				_apidevkeyend
 			);
 		};
 		let _fn_FreesrhBoktips = function(searchtext) {
 			return (
-				_apiserver +
-				'Api_v3.1/boktips/typ/BySearch/val/0/txtval/' +
-				searchtext +
-				_apidevkeyend
+				_apiserver + '/Api_v3.1/boktips/cmdtyp/BySearch/antal/0' + _apidevkeyend
 			);
 		};
 
@@ -71,11 +60,11 @@ module.exports = {
 			);
 		};
 
-		let _fn_AmnenBoktips = function(antal) {
+		let _fn_CategoryBoktips = function(catid) {
 			return (
 				_apiserver +
-				'/Api_v3.1/boktips/typ/Latest/val/' +
-				antal +
+				'/Api_v3.1/boktips/typ/ByCategory/val/' +
+				catid +
 				'/txtval/0' +
 				_apidevkeyend
 			);
@@ -109,10 +98,9 @@ module.exports = {
 				boktipslistor: {
 					getlatestBoktips: _fn_LatestBoktips,
 					getRandomBoktips: _fn_RndBoktips,
-					getRankedBoktips: _fn_RankedBoktips,
 					getAgeBoktips: _fn_AgeBoktips,
 					getfreesearchBoktips: _fn_FreesrhBoktips,
-					getAmnenBoktips: _fn_AmnenBoktips
+					getCategoryBoktips: _fn_CategoryBoktips
 				},
 				autocomplete: {
 					getbyAuto: _fn_autocompleteSrhBoktips
