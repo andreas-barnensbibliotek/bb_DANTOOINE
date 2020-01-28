@@ -46,9 +46,7 @@ const autoCompleteHandler = () => {
 					item.TipID +
 					'" data-val="' +
 					search +
-					'"><img src="' +
-					item.ImgSrc +
-					'"> ' +
+					'">' +
 					item.Title.replace(re, '<b>$1</b>') +
 					'</div>'
 				);
