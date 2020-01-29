@@ -15,15 +15,44 @@
 }
 
 
-.bred{
-    border: 1px solid red;
-}
  body {
     background-color: $body-background-color;
     color: $body-color; 
-    background-image: url("./images/Sommarboken2020_bg.png");
+    background-image: url(./images/Sommarboken2020_bg.jpg);
     background-repeat: no-repeat;
-    background-position: center top; 
+    background-position: center; 
+    background-size: cover;
+}
+
+.sommar-header{
+    background-image: url(./images/Sommarboken2020_huvud.jpg);
+    background-repeat: no-repeat;
+    background-position: center right; 
+    background-size: cover;
+    height:150px;
+
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) { 
+            height:150px;
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) { 
+            height:200px; 
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) { 
+            height:300px; 
+        }
+
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) { 
+            height:300px; 
+        }
+
+
+
 }
 
 #mainboklistcontainer{
@@ -50,7 +79,19 @@ a {
 }
 
 .sommarboken-container {
-    background-color: $white;
+       background-color: $sommarboken-dark;
+    color: $body-color; 
+    /*
+    background-image: url(./images/Sommarboken2020_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    */
+}
+.sommarboken-col{
+    background-color: $sommarboken-orange;
+    color: $body-color; 
+    border: solid 4px $sommarboken-dark;
 }
 
 .sommarboken-logo {
@@ -73,6 +114,10 @@ a {
 .sommarboken-header-links{
     font-weight: bold;
     font-size: 14px;
+    color: $sommarboken-gray-900;
+    background-color: $sommarboken-orange;
+    padding: 6px 12px;
+    border-radius: 0.25em;
 }
 
 .sommarboken-user::before{
@@ -107,10 +152,9 @@ a {
     color:white !important;
   }
 .sommarboken-header-content{
-    height: 150px;
+   // height: 100px;
     overflow: hidden;
    
-
     @include media-breakpoint-up(sm) {
         display: block;
     }
@@ -276,8 +320,8 @@ li.dropdown:hover > .dropdown-menu {
     max-height:180px !important;
     max-height: 380px;
     padding: 2rem 1rem;
-    background-color: $sommarboken-brown;
-    border: 5px solid $sommarboken-lightbrown;
+    background-color: $grey;
+    //border: 5px solid $sommarboken-lightbrown;
 }
 
 #footikonimg{
@@ -729,26 +773,6 @@ li.dropdown:hover > .dropdown-menu {
     min-width: 120px;
 }
 
-.sommarboken-table-book-tips{
-    width: 80%;
-}
-
-.sommarboken-background-row-booktip{
-    background-color: transparent;
-}
-
-.sommarboken-background-row-booktip-item:hover{
-   background-color: rgba( $sommarboken-teak, .2 );
-}
-
-.sommarboken-modal-header{
- background-color: $sommarboken-teak;
- color: $white;
-    .close{
-        color: $white;
-    }
-}
-
 
 .img-print{
     width: 300px;
@@ -757,170 +781,5 @@ li.dropdown:hover > .dropdown-menu {
     width: 400px;
 }
 
-.sommarboken-book-width{
-    width: 214px;
-
-    @media (max-width: 576px) {
-        width: 180px;
-    }
-}
 
 
-.quiz-inputGroup {
-    background-color: $white;
-    display: block;
-    margin: 10px 0;
-    position: relative;
-    
-    .quiz-label {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      padding-left: 50px;
-      padding-right: 12px;
-      width: 100%;
-      display: block;
-      text-align: left;
-      color: $sommarboken-gray-900;
-      cursor: pointer;
-      position: relative;
-      z-index: 2;
-      transition: color 200ms ease-in;
-      overflow: hidden;
-       
-            &:before {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                content: '';
-                background-color: $sommarboken-purple;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%) scale3d(1, 1, 1);
-                transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-                opacity: 0;
-                z-index: -1;
-            }
-
-            &:after {
-                width: 32px;
-                height: 32px;
-                content: "";
-                border: 2px solid #D1D7DC;
-                background-color: #fff;
-                background-size: cover;
-                border-radius: 50%;
-                z-index: 2;
-                position: absolute;
-                left: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                cursor: pointer;
-                transition: all 200ms ease-in;
-
-            }
-    }
-    .quiz-nr1{       
-        &:after{
-            background-image: url("http://localhost/bb_DANTOOINE/images/quiz-g_nr-1.svg");
-        }
-    }
-    .quiz-nrx{       
-        &:after{
-            background-image: url("http://localhost/bb_DANTOOINE/images/quiz-g_nr-x.svg");
-        }
-    }
-    .quiz-nr2{       
-        &:after{
-            background-image: url("http://localhost/bb_DANTOOINE/images/quiz-g_nr-2.svg");
-        }
-    }
-
-    input:checked ~ label {
-        color: #fff;
-
-        &:before {
-        transform: translate(-50%, -50%) scale3d(56, 56, 1);
-        opacity: 1;
-        }
-
-        &:after {
-        background-color: $sommarboken-blue;
-        border-color: $sommarboken-blue;
-        background-image: url("http://localhost/bb_DANTOOINE/images/quiz-w_nr-x.svg");
-        }
-
-    }
-
-    input:checked ~ .quiz-nr1 {
-        &:after {
-        background-image: url("http://localhost/bb_DANTOOINE/images/quiz-w_nr-1.svg");
-        }
-    }
-    input:checked ~ .quiz-nrx {
-        &:after {
-        background-image: url("http://localhost/bb_DANTOOINE/images/quiz-w_nr-x.svg");
-        }
-    }
-    input:checked ~ .quiz-nr2 {
-        &:after {
-        background-image: url("http://localhost/bb_DANTOOINE/images/quiz-w_nr-2.svg");
-        }
-    }
-
-    input {
-      width: 32px;
-      height: 32px;
-      order: 1;
-      z-index: 2;
-      position: absolute;
-      left: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      visibility: hidden;
-    }
-  }
-
-.quiz-background{
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-.quiz-img-center{
-    text-align:center;
-}
-.quiz-table-right{
-    background-color: $sommarboken-green;
-    color: $white;
-}
-
-.table-quiz thead th {
-    font-weight: bold;
-    background-color: $sommarboken-orange;
-    text-align: center;
-    color: $white;
-    border: none;
-}
-.table-quiz td {
-    text-align: center;
-}
-
-.table-col-5{
-    width:5%;
-}
-.table-col-10{
-    width:10%;
-}
-.table-col-15{
-    width:15%;
-}
-.table-col-20{
-    width:20%;
-}
-
-.table-highscore thead th {
-    font-weight: bold;
-    background-color: $sommarboken-purple;
-    color: $white;
-    border: none;
-}
