@@ -25,6 +25,28 @@ $body-background-color:         #8cc4df ; //Background color
 $dantooine-background-row-color: lighten( $dantooine-vanilla, 10% );
 
 
+/*
+Colors for categories -c 
+*/
+
+$dantooine-fantasy:     #4ab5e1 ; // Fantasy
+$dantooine-adventure:   #a5daf0 ; // Äventyr
+$dantooine-animal:      #b39f70 ; // Djur
+$dantooine-other:       #d9cfb7 ; // Övrigt
+$dantooine-love:        #d3749d ; // Kärlek
+$dantooine-horse:       #e3a8c1 ; // Hästar
+$dantooine-story:       #847db4 ; // Berättelse
+$dantooine-sad:         #c1bed9 ; // Sorgligt
+$dantooine-funny:       #b4d171 ; // Humor
+$dantooine-poem:        #d0e3a6 ; // Dikt
+$dantooine-jingles:     #fff061 ; // Ramsor
+$dantooine-thought:     #fff7b0 ; // Tankar
+$dantooine-crime:       #f39e33 ; // Deckare
+$dantooine-thriller:    #f9cf99 ; // Spänning
+$dantooine-horror:      #a5a5a5 ; // Skräck
+$dantooine-ghost:       #d2d2d2 ; // Spöken
+
+
 $theme-colors: ();
 $theme-colors: map-merge((
   "dantooine-blue":        $dantooine-blue,
@@ -38,7 +60,25 @@ $theme-colors: map-merge((
   "dantooine-vanilla":     $dantooine-vanilla,
   "dantooine-lightbrown":  $dantooine-lightbrown,
   "dantooine-brown":       $dantooine-brown,
-  "dantooine-grey":        $dantooine-grey
+  "dantooine-grey":        $dantooine-grey,
+
+  "dantooine-fantasy":   $dantooine-fantasy,
+  "dantooine-adventure": $dantooine-adventure,  
+  "dantooine-animal":    $dantooine-animal,
+  "dantooine-other":     $dantooine-other,  
+  "dantooine-love":      $dantooine-love,  
+  "dantooine-horse":     $dantooine-horse, 
+  "dantooine-story":     $dantooine-story, 
+  "dantooine-sad":       $dantooine-sad,
+  "dantooine-funny":     $dantooine-funny, 
+  "dantooine-poem":      $dantooine-poem,   
+  "dantooine-jingles":   $dantooine-jingles, 
+  "dantooine-thought":   $dantooine-thought,  
+  "dantooine-crime":     $dantooine-crime, 
+  "dantooine-thriller":  $dantooine-thriller, 
+  "dantooine-horror":    $dantooine-horror,
+  "dantooine-ghost":     $dantooine-ghost 
+
 ), $theme-colors);
 
 
@@ -46,3 +86,4 @@ $theme-colors: map-merge((
 $yiq-text-dark: $dantooine-gray-900;
 $yiq-text-light: $dantooine-gray-900;
 */
+

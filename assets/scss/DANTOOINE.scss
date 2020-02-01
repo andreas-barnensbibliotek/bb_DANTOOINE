@@ -924,3 +924,179 @@ li.dropdown:hover > .dropdown-menu {
     color: $white;
     border: none;
 }
+
+
+
+.btn-category-item{   
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 9px;
+    font-size: 16px;
+    line-height: 1.428571429;
+    border-radius: 25px;
+
+    &-white{
+        background-color: white !important;
+    }
+}
+
+.dantooine-post-width{
+    width: 214px;
+    margin:4px;
+
+    @media (max-width: 576px) {
+        width: 180px;
+    }
+}
+
+.dantooine-post-author{
+    display:inline-block; 
+    margin-bottom: 0; 
+    margin-left: 5px;
+}
+
+.dantooine-post-profile{
+    background-color: $dantooine-green;
+}
+.dantooine-post-footer{
+    padding: 6px;
+    font-size: 20px;
+    background-color: $dantooine-green;
+}
+
+.dantooine-post-text{
+    background-color: $dantooine-ghost;
+    min-height: 600px;
+}
+
+.dantooine-fantasy{
+    &-bg-color {
+        background-color: $dantooine-fantasy;
+    }   
+    &-color{
+        color: $dantooine-fantasy;
+    }
+}
+
+.dantooine-adventure{
+    &-bg-color {
+        background-color: $dantooine-adventure;
+    }   
+    &-color{
+        color: $dantooine-adventure;
+    }
+}
+.dantooine-animal{
+    &-bg-color {
+        background-color: $dantooine-animal;
+    }   
+    &-color{
+        color: $dantooine-animal;
+    }
+}
+.dantooine-other{
+    &-bg-color {
+        background-color: $dantooine-other;
+    }   
+    &-color{
+        color: $dantooine-other;
+    }
+}
+.dantooine-love{
+    &-bg-color {
+        background-color: $dantooine-love;
+    }   
+    &-color{
+        color: $dantooine-love;
+    }
+}
+.dantooine-horse{
+    &-bg-color {
+        background-color: $dantooine-horse;
+    }   
+    &-color{
+        color: $dantooine-horse;
+    }
+}
+.dantooine-story{
+    &-bg-color {
+        background-color: $dantooine-story;
+    }   
+    &-color{
+        color: $dantooine-story;
+    }
+}
+.dantooine-sad{
+    &-bg-color {
+        background-color: $dantooine-sad;
+    }   
+    &-color{
+        color: $dantooine-sad;
+    }
+}
+.dantooine-funny{
+    &-bg-color {
+        background-color: $dantooine-funny;
+    }   
+    &-color{
+        color: $dantooine-funny;
+    }
+}
+.dantooine-poem{
+    &-bg-color {
+        background-color: $dantooine-poem;
+    }   
+    &-color{
+        color: $dantooine-poem;
+    }
+}
+.dantooine-jingles{
+    &-bg-color {
+        background-color: $dantooine-jingles;
+    }   
+    &-color{
+        color: $dantooine-jingles;
+    }
+}
+.dantooine-thought{
+    &-bg-color {
+        background-color: $dantooine-thought;
+    }   
+    &-color{
+        color: $dantooine-thought;
+    }
+}
+.dantooine-crime{
+    &-bg-color {
+        background-color: $dantooine-crime;
+    }   
+    &-color{
+        color: $dantooine-crime;
+    }
+}
+.dantooine-thriller{
+    &-bg-color {
+        background-color: $dantooine-thriller;
+    }   
+    &-color{
+        color: $dantooine-thriller;
+    }
+}
+.dantooine-horror{
+    &-bg-color {
+        background-color: $dantooine-horror;
+    }   
+    &-color{
+        color: $dantooine-horror;
+    }
+}
+.dantooine-ghost{
+    &-bg-color {
+        background-color: $dantooine-ghost;
+    }   
+    &-color{
+        color: $dantooine-ghost;
+    }
+}
+
