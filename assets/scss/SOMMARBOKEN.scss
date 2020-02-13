@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-position: center right; 
     background-size: cover;
-    height:150px;
+    height:200px;
 
         // Small devices (landscape phones, 576px and up)
         @media (min-width: 576px) { 
@@ -43,12 +43,12 @@
 
         // Large devices (desktops, 992px and up)
         @media (min-width: 992px) { 
-            height:300px; 
+            height:200px; 
         }
 
         // Extra large devices (large desktops, 1200px and up)
         @media (min-width: 1200px) { 
-            height:300px; 
+            height:200px; 
         }
 
 
