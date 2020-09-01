@@ -29,7 +29,6 @@ $dantooine-background-row-color: lighten( $dantooine-vanilla, 10% );
 Colors for categories -c 
 */
 
-$dantooine-fantasy:     #4ab5e1 ; // Fantasy
 $dantooine-adventure:   #a5daf0 ; // Äventyr
 $dantooine-animal:      #b39f70 ; // Djur
 $dantooine-other:       #d9cfb7 ; // Övrigt
@@ -45,6 +44,24 @@ $dantooine-crime:       #f39e33 ; // Deckare
 $dantooine-thriller:    #f9cf99 ; // Spänning
 $dantooine-horror:      #a5a5a5 ; // Skräck
 $dantooine-ghost:       #d2d2d2 ; // Spöken
+
+$dantooine-fantasy:    #4ab5e1 ; // Fantasy
+$dantooine-aventyr:    #a5daf0 ; // Äventyr
+$dantooine-djur:       #b39f70 ; // Djur
+$dantooine-ovrigt:     #d9cfb7 ; // Övrigt
+$dantooine-karlek:     #d3749d ; // Kärlek
+$dantooine-hastar:     #e3a8c1 ; // Hästar
+$dantooine-berattelse: #847db4 ; // Berättelse
+$dantooine-sorgligt:   #c1bed9 ; // Sorgligt
+$dantooine-skratta:    #b4d171 ; // Humor
+$dantooine-dikt:       #d0e3a6 ; // Dikt
+$dantooine-ramsa:      #fff061 ; // Ramsor
+$dantooine-tankar:     #fff7b0 ; // Tankar
+$dantooine-deckare:    #f39e33 ; // Deckare
+$dantooine-spanning:   #f9cf99 ; // Spänning
+$dantooine-skrack:     #a5a5a5 ; // Skräck
+$dantooine-spoken:     #d2d2d2 ; // Spöken
+$dantooine-default:    #664924 ; // ALLA 
 
 
 $theme-colors: ();
@@ -62,7 +79,6 @@ $theme-colors: map-merge((
   "dantooine-brown":       $dantooine-brown,
   "dantooine-grey":        $dantooine-grey,
 
-  "dantooine-fantasy":   $dantooine-fantasy,
   "dantooine-adventure": $dantooine-adventure,  
   "dantooine-animal":    $dantooine-animal,
   "dantooine-other":     $dantooine-other,  
@@ -77,7 +93,25 @@ $theme-colors: map-merge((
   "dantooine-crime":     $dantooine-crime, 
   "dantooine-thriller":  $dantooine-thriller, 
   "dantooine-horror":    $dantooine-horror,
-  "dantooine-ghost":     $dantooine-ghost 
+  "dantooine-ghost":     $dantooine-ghost, 
+
+  "dantooine-fantasy":    $dantooine-fantasy,
+  "dantooine-aventyr":    $dantooine-aventyr,  
+  "dantooine-djur":      $dantooine-djur,
+  "dantooine-ovrigt":     $dantooine-ovrigt,  
+  "dantooine-karlek":     $dantooine-karlek,  
+  "dantooine-hastar":     $dantooine-hastar, 
+  "dantooine-berattelse": $dantooine-berattelse, 
+  "dantooine-sorgligt":   $dantooine-sorgligt,
+  "dantooine-skratta":    $dantooine-skratta, 
+  "dantooine-dikt":       $dantooine-dikt,   
+  "dantooine-ramsa":      $dantooine-ramsa, 
+  "dantooine-tankar":     $dantooine-tankar,  
+  "dantooine-deckare":    $dantooine-deckare, 
+  "dantooine-spanning":   $dantooine-spanning, 
+  "dantooine-skrack":     $dantooine-skrack,
+  "dantooine-spoken":     $dantooine-spoken,
+  "dantooine-default":    $dantooine-default
 
 ), $theme-colors);
 
@@ -86,4 +120,3 @@ $theme-colors: map-merge((
 $yiq-text-dark: $dantooine-gray-900;
 $yiq-text-light: $dantooine-gray-900;
 */
-

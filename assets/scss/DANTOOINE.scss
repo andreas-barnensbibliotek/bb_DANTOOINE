@@ -928,17 +928,22 @@ li.dropdown:hover > .dropdown-menu {
 
 
 .btn-category-item{   
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     padding: 9px;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 1.428571429;
-    border-radius: 25px;
+    border-radius: 40px;
 
     &-white{
         background-color: white !important;
     }
+}
+
+.category-item-title{
+    font-size: 15px;
+    margin-bottom: 0;
 }
 
 .dantooine-post-width{
@@ -979,124 +984,124 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
-.dantooine-adventure{
+.dantooine-aventyr{
     &-bg-color {
-        background-color: $dantooine-adventure;
+        background-color: $dantooine-aventyr;
     }   
     &-color{
-        color: $dantooine-adventure;
+        color: $dantooine-aventyr;
     }
 }
-.dantooine-animal{
+.dantooine-djur{
     &-bg-color {
-        background-color: $dantooine-animal;
+        background-color: $dantooine-djur;
     }   
     &-color{
-        color: $dantooine-animal;
+        color: $dantooine-djur;
     }
 }
-.dantooine-other{
+.dantooine-ovrigt{
     &-bg-color {
-        background-color: $dantooine-other;
+        background-color: $dantooine-ovrigt;
     }   
     &-color{
-        color: $dantooine-other;
+        color: $dantooine-ovrigt;
     }
 }
-.dantooine-love{
+.dantooine-karlek{
     &-bg-color {
-        background-color: $dantooine-love;
+        background-color: $dantooine-karlek;
     }   
     &-color{
-        color: $dantooine-love;
+        color: $dantooine-karlek;
     }
 }
-.dantooine-horse{
+.dantooine-hastar{
     &-bg-color {
-        background-color: $dantooine-horse;
+        background-color: $dantooine-hastar;
     }   
     &-color{
-        color: $dantooine-horse;
+        color: $dantooine-hastar;
     }
 }
-.dantooine-story{
+.dantooine-berattelse{
     &-bg-color {
-        background-color: $dantooine-story;
+        background-color: $dantooine-berattelse;
     }   
     &-color{
-        color: $dantooine-story;
+        color: $dantooine-berattelse;
     }
 }
-.dantooine-sad{
+.dantooine-sorgligt{
     &-bg-color {
-        background-color: $dantooine-sad;
+        background-color: $dantooine-sorgligt;
     }   
     &-color{
-        color: $dantooine-sad;
+        color: $dantooine-sorgligt;
     }
 }
-.dantooine-funny{
+.dantooine-skratta{
     &-bg-color {
-        background-color: $dantooine-funny;
+        background-color: $dantooine-skratta;
     }   
     &-color{
-        color: $dantooine-funny;
+        color: $dantooine-skratta;
     }
 }
-.dantooine-poem{
+.dantooine-dikt{
     &-bg-color {
-        background-color: $dantooine-poem;
+        background-color: $dantooine-dikt;
     }   
     &-color{
-        color: $dantooine-poem;
+        color: $dantooine-dikt;
     }
 }
-.dantooine-jingles{
+.dantooine-ramsa{
     &-bg-color {
-        background-color: $dantooine-jingles;
+        background-color: $dantooine-ramsa;
     }   
     &-color{
-        color: $dantooine-jingles;
+        color: $dantooine-ramsa;
     }
 }
-.dantooine-thought{
+.dantooine-tankar{
     &-bg-color {
-        background-color: $dantooine-thought;
+        background-color: $dantooine-tankar;
     }   
     &-color{
-        color: $dantooine-thought;
+        color: $dantooine-tankar;
     }
 }
-.dantooine-crime{
+.dantooine-deckare{
     &-bg-color {
-        background-color: $dantooine-crime;
+        background-color: $dantooine-deckare;
     }   
     &-color{
-        color: $dantooine-crime;
+        color: $dantooine-deckare;
     }
 }
-.dantooine-thriller{
+.dantooine-spanning{
     &-bg-color {
-        background-color: $dantooine-thriller;
+        background-color: $dantooine-spanning;
     }   
     &-color{
-        color: $dantooine-thriller;
+        color: $dantooine-spanning;
     }
 }
-.dantooine-horror{
+.dantooine-skrack{
     &-bg-color {
-        background-color: $dantooine-horror;
+        background-color: $dantooine-skrack;
     }   
     &-color{
-        color: $dantooine-horror;
+        color: $dantooine-skrack;
     }
 }
-.dantooine-ghost{
+.dantooine-spoken{
     &-bg-color {
-        background-color: $dantooine-ghost;
+        background-color: $dantooine-spoken;
     }   
     &-color{
-        color: $dantooine-ghost;
+        color: $dantooine-spoken;
     }
 }
 
