@@ -941,19 +941,42 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
+
+.btn-category-item-card{   
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+    line-height: 1.428571429;
+    border-radius: 30px;
+
+    &-white{
+        background-color: white !important;
+    }
+}
+
+
 .category-item-title{
     font-size: 15px;
     margin-bottom: 0;
 }
 
 .dantooine-post-width{
-    width: 214px;
-    margin:4px;
+    width: 350px;
+    margin:10px;
+ -webkit-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
+box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
 
     @media (max-width: 576px) {
-        width: 180px;
+        width: 300px;
     }
 }
+
+
+
+
 
 .dantooine-post-author{
     display:inline-block; 
@@ -1024,6 +1047,78 @@ li.dropdown:hover > .dropdown-menu {
         color: $dantooine-hastar;
     }
 }
+
+
+%dantooine-post-cover-img{
+    display: flex; 
+    height: 170px;
+    overflow: hidden;     
+}
+
+
+
+
+$images: ("hastar": url("http://localhost/bb_DANTOOINE/images/hastar.jpg"), 
+        "slott": url("http://localhost/bb_DANTOOINE/images/castle.jpg"), 
+        "karlek": url("http://localhost/bb_DANTOOINE/images/karlek.jpg")
+        );
+
+@each $name, $image in $images {
+  .dantooine-post-cover-img-#{$name} {
+    @extend %dantooine-post-cover-img;
+    background: $image;
+    background-position: center;
+    background-size:cover;
+  }
+}
+
+
+.dantooine-post-cover-text{
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 250px;
+  max-height: 100px;
+}
+
+
+$colors: ("blue": #111aaa, 
+        "black": #000, 
+        "red": #aa1111);
+
+@each $name, $color in $colors {
+  .dantooine-post-cover-text-#{$name} {
+     @extend .dantooine-post-cover-text;
+    color: $color;
+    text-shadow: 2px 1px 2px rgba(255, 255, 255, 1);
+    font-size: 35px;
+    white-space: pre !important;
+  }
+}
+
+
+
+
+$fonts: ("love": "Satisfy", 
+        "cartoon": "Chewy", 
+        "adventure": "Cardo");
+
+@each $name, $font in $fonts {
+  .dantooine-post-cover-text-font-#{$name} {
+    font-family: $font;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .dantooine-berattelse{
     &-bg-color {
         background-color: $dantooine-berattelse;
