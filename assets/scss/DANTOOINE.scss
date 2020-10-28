@@ -962,12 +962,19 @@ li.dropdown:hover > .dropdown-menu {
     margin-bottom: 0;
 }
 
+
+.dantooine-box-shadow{
+    -webkit-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
+}
+
+
 .dantooine-post-width{
     width: 350px;
+    background-color: $dantooine-lightgrey;
     margin:10px;
- -webkit-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
--moz-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
+    @extend  .dantooine-box-shadow;
 
     @media (max-width: 576px) {
         width: 300px;
@@ -985,16 +992,30 @@ box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.1);
 }
 
 .dantooine-post-profile{
-    background-color: $dantooine-green;
+    @extend  .dantooine-box-shadow;
+    padding: 10px;
+    background-color: $dantooine-lightgrey;
 }
+
+
+.dantooine-post-profile-list{
+    @extend  .dantooine-box-shadow;
+    padding: 10px;
+    background-color: $dantooine-lightgrey;
+    min-height: 420px;
+    overflow: scroll;
+}
+
+
+
 .dantooine-post-footer{
     padding: 6px;
     font-size: 20px;
-    background-color: $dantooine-green;
+    background-color: $dantooine-ghost;
 }
 
 .dantooine-post-text{
-    background-color: $dantooine-ghost;
+    background-color: $dantooine-lightgrey;
     min-height: 600px;
 }
 
