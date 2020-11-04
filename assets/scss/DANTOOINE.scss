@@ -971,13 +971,14 @@ li.dropdown:hover > .dropdown-menu {
 
 
 .dantooine-post-width{
-    width: 350px;
+   // width: 350px;
     background-color: $dantooine-lightgrey;
-    margin:10px;
+    padding:10px;
+    margin-bottom: 15px;
     @extend  .dantooine-box-shadow;
 
     @media (max-width: 576px) {
-        width: 300px;
+        //width: 300px;
     }
 }
 
