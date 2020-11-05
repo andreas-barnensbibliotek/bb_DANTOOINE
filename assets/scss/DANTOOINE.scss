@@ -941,6 +941,14 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
+.category-item{   
+    width: 60px;
+    height: 60px;
+}
+.category-item:hover {
+  transform: scale(1.10); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 
 .btn-category-item-card{   
     width: 40px;
@@ -960,6 +968,8 @@ li.dropdown:hover > .dropdown-menu {
 .category-item-title{
     font-size: 15px;
     margin-bottom: 0;
+    margin-top: 10px;
+    line-height: 1;
 }
 
 
