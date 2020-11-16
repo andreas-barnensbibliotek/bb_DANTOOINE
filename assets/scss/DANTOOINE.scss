@@ -941,12 +941,53 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
+.age-category-item{  
+    margin-top: .5rem; 
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 9px;
+    font-size: 25px;
+    border-radius: 40px;
+    line-height: 1.428571429;
+    background-color: $dantooine-purple;
+    color:$white;
+    margin-bottom: 0;
+    position: relative; 
+    z-index: 4; 
+}
+.age-category-item:hover {
+  transform: scale(1.10); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+#age-category-item-ul #age-category-item-li:not(.init) { 
+    width: 100px; 
+    display: none; 
+    background: $dantooine-lightgrey;
+    color: black;
+    }
+#age-category-item-ul #age-category-item-li:not(.init):hover, #age-category-item-ul #age-category-item-li.selected:not(.init) { 
+    background: $dantooine-purple; 
+    }
+#age-category-item-li.init { 
+    cursor: pointer; 
+    }
+
+
+.link-clean{
+    text-decoration: none !important;
+}
+
+.link-clean:hover {
+  transform: scale(1.05); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
 .category-item{   
     width: 60px;
     height: 60px;
-}
-.category-item:hover {
-  transform: scale(1.10); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -1015,6 +1056,7 @@ li.dropdown:hover > .dropdown-menu {
     background-color: $dantooine-lightgrey;
     min-height: 420px;
     overflow: scroll;
+     overflow-x: hidden;
 }
 
 
@@ -1231,4 +1273,7 @@ $fonts: ("love": "Satisfy",
         color: $dantooine-spoken;
     }
 }
+
+
+
 
