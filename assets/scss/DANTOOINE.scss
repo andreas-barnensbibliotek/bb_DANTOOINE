@@ -1013,12 +1013,37 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 
+
+
 .category-item-title{
     font-size: 15px;
     margin-bottom: 0;
     margin-top: 10px;
     line-height: 1;
 }
+
+.category-icon-div{
+    width: 80px;
+    text-align: center !important;
+    margin-bottom:5px;
+}
+
+.category-icon-div-visa-alla{
+    width: 80px;
+    text-align: center !important;
+    margin-bottom:5px;
+
+        @media (min-width: 576px) {margin-left: 1*80px; }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {margin-left: 1*80px;}
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {margin-left: 7*80px; }
+
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {margin-left: 3*80px; }
+        }
 
 
 .dantooine-box-shadow{
