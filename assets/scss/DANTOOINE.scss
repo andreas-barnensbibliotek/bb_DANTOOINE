@@ -945,16 +945,13 @@ li.dropdown:hover > .dropdown-menu {
   transform: scale(1.10); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-
-
-
-.age-category-item{  
+.all-category-item{  
     margin-top: .5rem; 
     width: 60px;
     height: 60px;
     text-align: center;
-    padding: 9px;
-    font-size: 25px;
+    padding-top: 16px;
+    font-size: 18px;
     border-radius: 40px;
     line-height: 1.428571429;
     background-color: $dantooine-purple;
@@ -963,10 +960,35 @@ li.dropdown:hover > .dropdown-menu {
     position: relative; 
     z-index: 4; 
 }
+
+.all-category-item:hover {
+  transform: scale(1.10); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.age-category-item{  
+    margin-top: .5rem; 
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    border-radius: 40px;
+    line-height: 1.428571429;
+    background-color: $dantooine-purple;
+    color:$white;
+    margin-bottom: 0;
+    position: relative; 
+    z-index: 4; 
+}
+
 .age-category-item:hover {
   transform: scale(1.10); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.age-size{
+    font-size: 20px !important;
+}
 
 #age-category-item-ul #age-category-item-li:not(.init) { 
     width: 100px; 
@@ -980,6 +1002,13 @@ li.dropdown:hover > .dropdown-menu {
 #age-category-item-li.init { 
     cursor: pointer; 
     }
+
+#age-category-icon{
+    display: inline; 
+    font-size: 14px !important; 
+    margin-left: 3px;
+}
+
 
 
 .link-clean{
@@ -1027,9 +1056,16 @@ li.dropdown:hover > .dropdown-menu {
     text-align: center !important;
     margin-bottom:5px;
 }
+.category-icon-div:hover {
+ transform: scale(1.10); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
 
 .category-icon-div-visa-alla{
-    width: 80px;
+   // width: 80px;
     text-align: center !important;
     margin-bottom:5px;
 
@@ -1053,6 +1089,12 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 
+.category-icon-div-visa-alla:hover {
+ transform: scale(1.10); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
 .dantooine-post-width{
    // width: 350px;
     background-color: $dantooine-lightgrey;
@@ -1065,7 +1107,9 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
-
+.dantooine-post-width:hover {
+  transform: scale(1.03); /* (103% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 
 
@@ -1162,68 +1206,12 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 
-
-
-$images: ("hastar": url("http://localhost/bb_DANTOOINE/images/hastar.jpg"), 
-        "slott": url("http://localhost/bb_DANTOOINE/images/castle.jpg"), 
-        "karlek": url("http://localhost/bb_DANTOOINE/images/karlek.jpg")
-        );
-
-@each $name, $image in $images {
-  .dantooine-post-cover-img-#{$name} {
-    @extend %dantooine-post-cover-img;
-    background: $image;
-    background-position: center;
-    background-size:cover;
-  }
-}
-
-
 .dantooine-post-cover-text{
   white-space: nowrap;
   overflow: hidden;
   max-width: 250px;
   max-height: 100px;
 }
-
-
-$colors: ("blue": #111aaa, 
-        "black": #000, 
-        "red": #aa1111);
-
-@each $name, $color in $colors {
-  .dantooine-post-cover-text-#{$name} {
-     @extend .dantooine-post-cover-text;
-    color: $color;
-    text-shadow: 2px 1px 2px rgba(255, 255, 255, 1);
-    font-size: 35px;
-    white-space: pre !important;
-  }
-}
-
-
-
-
-$fonts: ("love": "Satisfy", 
-        "cartoon": "Chewy", 
-        "adventure": "Cardo");
-
-@each $name, $font in $fonts {
-  .dantooine-post-cover-text-font-#{$name} {
-    font-family: $font;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .dantooine-berattelse{
     &-bg-color {

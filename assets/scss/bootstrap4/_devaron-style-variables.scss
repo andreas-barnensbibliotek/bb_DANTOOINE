@@ -1,0 +1,49 @@
+
+/* Bilder för omslag skrivboken */ 
+
+
+$images: ("hastar": url("http://localhost/bb_DANTOOINE/images/hastar.jpg"), 
+        "slott": url("http://localhost/bb_DANTOOINE/images/castle.jpg"), 
+        "karlek": url("http://localhost/bb_DANTOOINE/images/karlek.jpg")
+        );
+
+@each $name, $image in $images {
+  .dantooine-post-cover-img-#{$name} {
+    @extend %dantooine-post-cover-img;
+    background: $image;
+    background-position: center;
+    background-size:cover;
+  }
+}
+
+
+
+
+/* Färg för rubriken för omslag skrivboken */ 
+
+$colors: ("blue": #111aaa, 
+        "black": #000, 
+        "red": #aa1111);
+
+@each $name, $color in $colors {
+  .dantooine-post-cover-text-#{$name} {
+     @extend .dantooine-post-cover-text;
+    color: $color;
+    text-shadow: 2px 1px 2px rgba(255, 255, 255, 1);
+    font-size: 35px;
+    white-space: pre !important;
+  }
+}
+
+
+/* Typsnitt för rubriken för omslag skrivboken */ 
+
+$fonts: ("love": "Satisfy", 
+        "cartoon": "Chewy", 
+        "adventure": "Cardo");
+
+@each $name, $font in $fonts {
+  .dantooine-post-cover-text-font-#{$name} {
+    font-family: $font;
+  }
+}
