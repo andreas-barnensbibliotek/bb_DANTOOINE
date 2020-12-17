@@ -1015,9 +1015,7 @@ li.dropdown:hover > .dropdown-menu {
     text-decoration: none !important;
 }
 
-.link-clean:hover {
-  transform: scale(1.05); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+
 
 
 
@@ -1098,7 +1096,7 @@ li.dropdown:hover > .dropdown-menu {
 .dantooine-post-width{
    // width: 350px;
     background-color: $dantooine-lightgrey;
-    padding:10px;
+   // padding:10px;
     margin-bottom: 15px;
     @extend  .dantooine-box-shadow;
 
@@ -1157,47 +1155,6 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
-.dantooine-aventyr{
-    &-bg-color {
-        background-color: $dantooine-aventyr;
-    }   
-    &-color{
-        color: $dantooine-aventyr;
-    }
-}
-.dantooine-djur{
-    &-bg-color {
-        background-color: $dantooine-djur;
-    }   
-    &-color{
-        color: $dantooine-djur;
-    }
-}
-.dantooine-ovrigt{
-    &-bg-color {
-        background-color: $dantooine-ovrigt;
-    }   
-    &-color{
-        color: $dantooine-ovrigt;
-    }
-}
-.dantooine-karlek{
-    &-bg-color {
-        background-color: $dantooine-karlek;
-    }   
-    &-color{
-        color: $dantooine-karlek;
-    }
-}
-.dantooine-hastar{
-    &-bg-color {
-        background-color: $dantooine-hastar;
-    }   
-    &-color{
-        color: $dantooine-hastar;
-    }
-}
-
 
 %dantooine-post-cover-img{
     display: flex; 
@@ -1207,92 +1164,29 @@ li.dropdown:hover > .dropdown-menu {
 
 
 .dantooine-post-cover-text{
-  white-space: nowrap;
+  overflow-wrap: break-word;
+  font-size: 1.8em;
+  max-width: 250px;
+  max-height: 80px;
+  text-align: center;
+}
+
+.dantooine-post-cover-undertext{
+    white-space: nowrap;
   overflow: hidden;
   max-width: 250px;
   max-height: 100px;
 }
 
-.dantooine-berattelse{
-    &-bg-color {
-        background-color: $dantooine-berattelse;
-    }   
-    &-color{
-        color: $dantooine-berattelse;
-    }
+.dantooine-post-title{
+    font-size: 22px;
 }
-.dantooine-sorgligt{
-    &-bg-color {
-        background-color: $dantooine-sorgligt;
-    }   
-    &-color{
-        color: $dantooine-sorgligt;
-    }
+
+.dantooine-post-title-height{    
+    height: 75px !important;
 }
-.dantooine-skratta{
-    &-bg-color {
-        background-color: $dantooine-skratta;
-    }   
-    &-color{
-        color: $dantooine-skratta;
-    }
-}
-.dantooine-dikt{
-    &-bg-color {
-        background-color: $dantooine-dikt;
-    }   
-    &-color{
-        color: $dantooine-dikt;
-    }
-}
-.dantooine-ramsa{
-    &-bg-color {
-        background-color: $dantooine-ramsa;
-    }   
-    &-color{
-        color: $dantooine-ramsa;
-    }
-}
-.dantooine-tankar{
-    &-bg-color {
-        background-color: $dantooine-tankar;
-    }   
-    &-color{
-        color: $dantooine-tankar;
-    }
-}
-.dantooine-deckare{
-    &-bg-color {
-        background-color: $dantooine-deckare;
-    }   
-    &-color{
-        color: $dantooine-deckare;
-    }
-}
-.dantooine-spanning{
-    &-bg-color {
-        background-color: $dantooine-spanning;
-    }   
-    &-color{
-        color: $dantooine-spanning;
-    }
-}
-.dantooine-skrack{
-    &-bg-color {
-        background-color: $dantooine-skrack;
-    }   
-    &-color{
-        color: $dantooine-skrack;
-    }
-}
-.dantooine-spoken{
-    &-bg-color {
-        background-color: $dantooine-spoken;
-    }   
-    &-color{
-        color: $dantooine-spoken;
-    }
-}
+
+
 
 
 

@@ -2,9 +2,23 @@
 /* Bilder för omslag skrivboken */ 
 
 
-$images: ("hastar": url("http://localhost/bb_DANTOOINE/images/hastar.jpg"), 
-        "slott": url("http://localhost/bb_DANTOOINE/images/castle.jpg"), 
-        "karlek": url("http://localhost/bb_DANTOOINE/images/karlek.jpg")
+$images: (
+        "berattelse": url("http://localhost/bb_DANTOOINE/images/kategorier/berattelse.jpg"),
+        "deckare": url("http://localhost/bb_DANTOOINE/images/kategorier/deckare.jpg"), 
+        "dikt": url("http://localhost/bb_DANTOOINE/images/kategorier/dikt.jpg"), 
+        "djur": url("http://localhost/bb_DANTOOINE/images/kategorier/djur.jpg"), 
+        "fantasy": url("http://localhost/bb_DANTOOINE/images/kategorier/fantasy.jpg"), 
+        "skratta": url("http://localhost/bb_DANTOOINE/images/kategorier/skratta.jpg"), 
+        "hastar": url("http://localhost/bb_DANTOOINE/images/kategorier/hastar.jpg"), 
+        "karlek": url("http://localhost/bb_DANTOOINE/images/kategorier/karlek.jpg"),
+        "ramsa": url("http://localhost/bb_DANTOOINE/images/kategorier/ramsa.jpg"),
+        "skrack": url("http://localhost/bb_DANTOOINE/images/kategorier/skrack.jpg"),
+        "sorgligt": url("http://localhost/bb_DANTOOINE/images/kategorier/sorgligt.jpg"),
+        "spanning": url("http://localhost/bb_DANTOOINE/images/kategorier/spanning.jpg"),
+        "spoken": url("http://localhost/bb_DANTOOINE/images/kategorier/spoken.jpg"),
+        "tankar": url("http://localhost/bb_DANTOOINE/images/kategorier/tankar.jpg"),
+        "aventyr": url("http://localhost/bb_DANTOOINE/images/kategorier/aventyr.jpg"), 
+        "ovrigt": url("http://localhost/bb_DANTOOINE/images/kategorier/ovrigt.jpg") 
         );
 
 @each $name, $image in $images {
@@ -18,32 +32,113 @@ $images: ("hastar": url("http://localhost/bb_DANTOOINE/images/hastar.jpg"),
 
 
 
+/* Färg för rubriken för omslag skrivboken.  */ 
 
-/* Färg för rubriken för omslag skrivboken */ 
 
-$colors: ("blue": #111aaa, 
-        "black": #000, 
-        "red": #aa1111);
+$colors: ("blue": #20ACDE, 
+          "purple": #7067AB, 
+          "light-pink": #F0C2C5, 
+          "pink": #C22970,
+          "orange": #F29100,
+          "yellow": #FFEF42,
+          "green": #95C024,
+          "teak": #AA9256,
+          "vanilla": #CCBE9B,
+          "white": #fff,
+          "black": #000 );
+
+
 
 @each $name, $color in $colors {
   .dantooine-post-cover-text-#{$name} {
      @extend .dantooine-post-cover-text;
     color: $color;
-    text-shadow: 2px 1px 2px rgba(255, 255, 255, 1);
-    font-size: 35px;
-    white-space: pre !important;
+    text-shadow: 2px 1px 2px rgb(7, 7, 7);
   }
 }
 
 
 /* Typsnitt för rubriken för omslag skrivboken */ 
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
 
 $fonts: ("love": "Satisfy", 
         "cartoon": "Chewy", 
-        "adventure": "Cardo");
+        "adventure": "Cardo",
+        "space": "Russo One",
+        "hand": "Mansalva",
+        "luckiest": "Luckiest Guy");
 
 @each $name, $font in $fonts {
   .dantooine-post-cover-text-font-#{$name} {
     font-family: $font;
   }
+}
+
+
+.dantooine-aventyr{
+    &-bg-color {background-color: $dantooine-aventyr;}   
+    &-color{ color: $dantooine-aventyr;}
+}
+.dantooine-djur{
+    &-bg-color { background-color: $dantooine-djur; }   
+    &-color{ color: $dantooine-djur;}
+}
+.dantooine-ovrigt{
+    &-bg-color { background-color: $dantooine-ovrigt;}   
+    &-color{ color: $dantooine-ovrigt; }
+}
+.dantooine-karlek{
+    &-bg-color { background-color: $dantooine-karlek;}   
+    &-color{ color: $dantooine-karlek;}
+}
+.dantooine-hastar{
+    &-bg-color { background-color: $dantooine-hastar; }   
+    &-color{ color: $dantooine-hastar;}
+}
+.dantooine-berattelse{
+    &-bg-color { background-color: $dantooine-berattelse;}   
+    &-color{ color: $dantooine-berattelse;}
+}
+.dantooine-sorgligt{
+    &-bg-color {  background-color: $dantooine-sorgligt; }   
+    &-color{ color: $dantooine-sorgligt; }
+}
+.dantooine-skratta{
+    &-bg-color {background-color: $dantooine-skratta;}   
+    &-color{ color: $dantooine-skratta;}
+}
+.dantooine-dikt{
+    &-bg-color { background-color: $dantooine-dikt; }   
+    &-color{ color: $dantooine-dikt; }
+}
+.dantooine-ramsa{
+    &-bg-color { background-color: $dantooine-ramsa;}   
+    &-color{ color: $dantooine-ramsa;}
+}
+.dantooine-tankar{
+    &-bg-color { background-color: $dantooine-tankar;}   
+    &-color{ color: $dantooine-tankar; }
+}
+.dantooine-deckare{
+    &-bg-color {background-color: $dantooine-deckare;}   
+    &-color{ color: $dantooine-deckare;}
+}
+.dantooine-spanning{
+    &-bg-color { background-color: $dantooine-spanning;}   
+    &-color{ color: $dantooine-spanning;}
+}
+.dantooine-skrack{
+    &-bg-color { background-color: $dantooine-skrack;}   
+    &-color{ color: $dantooine-skrack; }
+}
+.dantooine-spoken{
+    &-bg-color {  background-color: $dantooine-spoken; }   
+    &-color{ color: $dantooine-spoken; }
 }
